@@ -1,6 +1,6 @@
 # Discord Verification System
 
-Verification System for Discord Servers written in JavaScript with discord.js
+Verification System for Discord Servers written in JavaScript with discord.js v13.
 
 
 ## Requirements
