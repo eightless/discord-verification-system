@@ -26,7 +26,7 @@ client.on('interactionCreate', async (interaction) => {
       let captchaEmbed = new Discord.MessageEmbed()
         .setTitle(`Hello! Are you human? Let's find out!`)
         .setDescription(
-          `Please type the captcha above to be able to access this server.\n\n**Additional Notes**:\n<:right:882338961358475314> Type out the traced colored characters from left to right.\n<:detective:882338961517858826> Ignore the decoy characters spread-around.\n<:lowercase:882338961509482636> You have to consider characters cases (upper/lower case).`
+          `Please type the captcha above to be able to access this server.\n\n**Additional Notes**:\nType out the traced colored characters from left to right.\nIgnore the decoy characters spread-around.\nYou have to consider characters cases (upper/lower case).`
         )
         .setColor('PURPLE')
         .setImage('attachment://captcha.png')
@@ -91,7 +91,7 @@ client.on('interactionCreate', async (interaction) => {
       } catch (err) {
         msg?.channel.send({
           content:
-            'Session expired. To start the verification process again, please go to <#878557898194714634>.',
+            'Session expired. To start the verification process again, please go to <#CHANNEL_ID>.',
         });
       }
     }
